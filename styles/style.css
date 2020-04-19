@@ -7,6 +7,7 @@ body {
 main {
     display: block;
     margin: 0 auto;
+    min-width: 1139px;
 }
 
 #logo-container {
@@ -17,7 +18,7 @@ main {
     min-width: 833px;
 }
 
-#logo-click {
+#main-logo {
     display: block;
     margin: 0 auto;
     width: 272px;
@@ -26,24 +27,41 @@ main {
 
 #search-form {
     margin: 0 auto;
-    width: 833px;
     font-size: 13px;
 }
 
 #search-bar {
-    width: 482px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    width: 582px;
     height: 44px;
-    padding: 5px 48px 5px 47px;
+    padding: 0 8px 0 14px;
     border-radius: 24px;
     border: 1px solid #dfe1e5;
-    color: rgba(0,0,0,.87);
-    font-size: 16px;
-    outline: 0;
 }
 
-#search-bar:hover, #search-bar:focus {
+#search-bar:hover, #search-bar:focus-within {
     box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
     border-color: rgba(223,225,229,0);
+}
+
+#magnify-icon {
+    margin-right: 13px;
+}
+
+#search-text {
+    color: rgba(0,0,0,.87);
+    font-size: 16px;
+    flex: 1 1 100%;
+    border: none;
+    outline: none;
+}
+
+#mic-icon {
+    width: 24px;
+    height: 24px;
+    margin: 0 8px;
 }
 
 #search-buttons {
@@ -70,6 +88,13 @@ main {
     background-color: #f8f8f8;
     border: 1px solid #c6c6c6;
     color: #222;
+}
+
+#search-buttons input[type=submit]:focus {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background-color: #f8f8f8;
+    border: 1px solid #4d90fe;
+    outline: none;
 }
 
 p {
