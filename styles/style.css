@@ -2,20 +2,112 @@ body {
     text-align: center;
     font-family: Arial, sans-serif;
     min-height: 100%;
+    min-width: 1139px;
 }
 
 main {
     display: block;
     margin: 0 auto;
-    min-width: 1139px;
+}
+
+p {
+    min-width: 833px;
+    font-size: 13px;
+    color: #222;
+    line-height: 28px;
+}
+
+a {
+    text-decoration: none;
+    color: #1a0dab;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    padding-top: 11px;
+}
+
+.nav-bar {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.nav-container li {
+    display: inline;
+    font-size: 13px;
+    padding-left: 15px;
+}
+
+.nav-left {
+    margin-top: 7px;
+    margin-left: 10px;
+}
+
+.nav-left a {
+    color: #000;
+    opacity: 0.75;
+}
+
+.nav-right {
+    padding: 0 30px;
+}
+
+.nav-right a {
+    color: #000;
+    opacity: .85;
+}
+
+#nav-expand-icon {
+    display: inline-block;
+    position: relative;
+    top: 4px;
+    margin: 0 auto;
+    opacity: 0.55;
+    width: 16px;
+}
+
+#nav-expand-icon:hover {
+    opacity: 1;
+}
+
+#sign-in {
+    color: #fff;
+    padding: 6.5px 12px;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: solid;
+    outline: none;
+    border: 1px solid #4285f4;
+    border-radius: 2px;
+    background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+    opacity: 1.0;
+}
+
+#sign-in:active {
+    background: -webkit-linear-gradient(top,#3c7ae4,#3f76d3);
+}
+
+@media (max-width: 575px) {
+    .nav-bar {
+        position: absolute;
+        left: -10000px;
+        width: 1px;
+        height: 1px;
+        top: auto;
+        overflow: hidden;
+    }
 }
 
 #logo-container {
     display: relative;
+    margin-top: 40px;
     padding-top: 109px;
-    margin-top: 89px;
     height: 233px;
-    min-width: 833px;
 }
 
 #main-logo {
@@ -61,7 +153,7 @@ main {
 #mic-icon {
     width: 24px;
     height: 24px;
-    margin: 0 8px;
+    margin: 0 13px;
 }
 
 #search-buttons {
@@ -95,20 +187,4 @@ main {
     background-color: #f8f8f8;
     border: 1px solid #4d90fe;
     outline: none;
-}
-
-p {
-    min-width: 833px;
-    font-size: 13px;
-    color: #222;
-    line-height: 28px;
-}
-
-a {
-    padding: 0 3px;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
 }
