@@ -34,7 +34,8 @@ footer {
     text-align: left;
     position: absolute;
     bottom: 0;
-    width: 100%:
+    width: 100%;
+    min-width: 1139px;
 }
 
 .nav-bar {
@@ -78,6 +79,47 @@ footer {
 .nav-right a {
     color: #000;
     opacity: .85;
+}
+
+.footer-box {
+    display: flex;
+    border-top: 1px solid #e4e4e4;
+    background: #f2f2f2;
+}
+
+.footer-box p {
+    padding-left: 30px;
+    font-size: 15px;
+    line-height: 40px;
+    color: rgba(0,0,0,0.54);
+}
+
+.footer-box ul {
+    padding-right: 30px;
+    margin-left: 30px;
+}
+
+.footer-bar {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.footer-bar li {
+    display: inline-block;
+    padding-left: 27px;
+}
+
+.footer-bar li:first-child {
+    padding-left: 0;
+}
+
+.footer-bar a {
+    font-size: 14px;
+    line-height: 40px;
+    color: #5f6368;
 }
 
 #nav-expand-icon {
