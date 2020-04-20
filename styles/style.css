@@ -5,11 +5,6 @@ body {
     min-width: 1139px;
 }
 
-main {
-    display: block;
-    margin: 0 auto;
-}
-
 p {
     min-width: 833px;
     font-size: 13px;
