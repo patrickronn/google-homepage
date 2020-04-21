@@ -1,30 +1,37 @@
 body {
-    text-align: left;
-    font-family: Arial, sans-serif;
     min-width: 1173px;
 }
 
 main {
     width: 652px;
+    text-align: left;
+    margin-left: 180px;
 }
+
+main p {
+    font-size: 14px;
+    line-height: 43px;
+}
+
+h2 {
+    font-size: 20px;
+    color: #222;
+    line-height: 26px;
+    font-weight: normal;
+}
+
+/* Rules for the section that contains a single search result's information  */
 
 section {
     width: 600px;
     margin-bottom: 27px;
 }
 
-
-a:hover[class="result-header"] {
-    text-decoration: none;
-}
-
-a:hover span[class="result-title"] {
-    text-decoration: underline;
-}
-
 .result-header {
     line-height: 1.3;
 }
+
+
 
 .result-url {
     padding: 1px 0;
@@ -59,6 +66,222 @@ a:hover span[class="result-title"] {
     color: #4d5156;
 }
 
-.result-date {
+/* Rules for the expanded result containers */
+
+.result-box {
+    position: relative;
+    font-size: 14px;
+    padding: 16px;
+    width: 652px;
+    border: 1px solid #dfe1e5;
+    border-radius: 8px;
+    margin-bottom: 27px;
+}
+
+div[class="result-box"] section {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.result-box-expand {
+    display: flex;
+    justify-content: space-between;
+    align-content: baseline;
+    line-height: 26px;
+}
+
+.result-box-tiles {
+    display: flex;
+    margin-top: 14px;
+    margin-bottom: 4px;
+    justify-content: space-between;
+}
+
+.tile-name {
+    margin-top: 3px;
+    word-wrap: normal;
+    width: 77px;
+}
+
+.result-feedback {
+    position: absolute;
+    text-align: right;
+    font-size: 12px;
+    right: 16px;
+    bottom: -20px;
+}
+
+.result-feedback a {
+    margin-left: 24px;
+}
+
+.result-tab {
+    display: block;
+    padding: 9px 40px 9px 16px;
+    border-top: 1px solid #dfe1e5;
+}
+
+.result-tab h3 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.58;
+}
+
+.result-tab-top {
+    padding: 9px 40px 9px 16px;
+}
+
+/* Rules for the video results container */
+.videos {
+    display: flex;
+    width: 652px;
+    justify-content: space-between;
+}
+
+.videos-tile {
+    position: relative;
+    width: 212px;
+    border-radius: 8px;
+    border: 1px solid #dfe1e5;
+    font-size: 14px;
+    line-height: 1.5800000429153442em;
+}
+
+.videos-tile img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.videos-tile-time {
+    position: absolute;
+    display: block;
+    width: fit-content;
+    top: 88px;
+    left: 10px;
+    border-radius: 2px;
+    padding: 3px 4px 0 4px;
+    background-color: rgba(0,0,0,.54);
+    font-size: 12px;
+    color: #fff;
+}
+
+.videos-tile-link {
+    margin: 16px 16px 0 16px;
+    height: 110px;
+    line-height: 22px;
+    font-size: 16px;
+}
+
+.videos-tile-about {
+    margin: 0 16px 11px 16px;
+    white-space: nowrap;
+}
+
+.videos-swipe {
+    line-height: 24px;
+    position: relative;
+    margin-top: -19px;
+    margin-left: -19px;
+    top: 150px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.04), 0 4px 8px 0 rgba(0,0,0,0.20);
+    background-color: #fff;
+    text-align: center;
+}
+
+/* Rules for related search phrases near bottom of page */
+
+.related-phrases-box {
+    margin-bottom: 28px;
+}
+
+.related-phrases-box h2 {
+    padding-bottom: 20px;
+}
+
+.related-phrases-list {
+    display: flex;
+    height: 105px;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.related-phrases-list li {
+    padding: 3px 32px 3px 0;
+}
+
+
+/* Misc. rules for minor adjustments and icons */
+
+a:hover[class="result-header"], a:hover[class="result-tab"] {
+    text-decoration: none;
+}
+
+a:hover span[class="result-title"] {
+    text-decoration: underline;
+}
+
+a[class="result-tab"] {
+    color: #222;
+}
+
+section h2 {
+    margin-bottom: 12px;
+}
+
+.total-results {
+    display: block;
+    height: 50px;
+}
+
+.add-margin-top {
+    margin-top: 51px;
+}
+
+.text-light {
     color: #70757a;
+}
+
+.small-icon {
+    display: inline-block;
+    position: relative;
+    top: 4px;
+    margin-right: 5px;
+    color: #9e9e9e;
+    fill: #9e9e9e;
+    height:16px;
+    width:16px;
+}
+
+.reset-padding {
+    padding: 0;
+}
+
+.swipe-icon {
+    display: block;
+    position: absolute;
+    margin-top: -12px; /* used to center into middle of element */
+    margin-left: -12px; /* used to center into middle of element */
+    top: 50%;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    color: #757575;
+    fill: #757575;
+}
+
+.tab-icon {
+    position: absolute;
+    right: 16px;
+    width: 24px;
+    height: 24px;
+    color: #757575;
+    fill: #757575;
+}
+
+a:hover span[class="swipe-icon"]{
+    color: #222;
+    fill: #222;
 }
