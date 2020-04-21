@@ -20,6 +20,10 @@ h2 {
     font-weight: normal;
 }
 
+footer {
+    position: relative;
+}
+
 /* Rules for the section that contains a single search result's information  */
 
 section {
@@ -264,6 +268,39 @@ div[class="result-box"] section {
     width: 71px;
 }
 
+/* Additional Rules for Page Footer (overrides some from style.css) */
+.footer-box ul {
+    padding-right: 30px;
+    margin-left: 180px;
+}
+
+.footer-bar-search li {
+    display: inline-block;
+    padding-left: 23px;
+    line-height: 40px;
+    font-size: 15px;
+    color: rgba(0,0,0,0.54);
+}
+
+.footer-bar-search li:first-child {
+    padding-left: 0;
+}
+
+.footer-bar-search a {
+    font-size: 14px;
+    color: #5f6368;
+}
+
+.footer-bar-location {
+    display: inline-block;
+    margin-left: 9px;
+    height: 25px;
+    padding-left: 16px;
+    border-left: 1px solid #e4e4e4;
+    font-size: 14px;
+    color: rgba(0,0,0,0.54);
+}
+
 
 /* Misc. rules for minor adjustments and icons */
 
@@ -336,4 +373,22 @@ section h2 {
 a:hover span[class="swipe-icon"]{
     color: #222;
     fill: #222;
+}
+
+.dot-icon {
+    margin: 6px 0 9px 0;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    vertical-align: middle;
+    background-color: #9e9e9e;
+    font-size: 14px;
+    line-height: 15px;
+    color: #5f6368;
+    border-radius: 100%;
+}
+
+.address {
+    color: #333;
+    font-weight: bold;
 }
