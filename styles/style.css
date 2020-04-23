@@ -182,8 +182,15 @@ footer {
     border-color: rgba(223,225,229,0);
 }
 
-#magnify-icon {
+.magnify-icon {
+    display: inline-block;
+    position: relative;
+    top: 1px;
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
     margin-right: 13px;
+    fill: #9AA0A6;
 }
 
 #search-text {
@@ -194,7 +201,8 @@ footer {
     outline: none;
 }
 
-#mic-icon {
+.mic-icon {
+    display: inline-block;
     width: 24px;
     height: 24px;
     margin: 0 13px;
