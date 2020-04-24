@@ -375,6 +375,38 @@ div[class="result-box"] section {
 
 
 /* Rules for the page navigation container near bottom of page */
+.nav-page-G {
+    display: block;
+    background: url(/images/google-nav-logos.webp) no-repeat;
+    background-position: -24px 0;
+    height: 40px;
+    width: 28px;
+}
+
+.nav-page-o-red {
+    display: block;
+    background: url(/images/google-nav-logos.webp) no-repeat;
+    background-position: -53px 0;
+    height: 40px;
+    width: 20px;
+}
+
+.nav-page-o {
+    display: block;
+    background: url(/images/google-nav-logos.webp) no-repeat;
+    background-position: -74px 0;
+    height: 40px;
+    width: 20px;
+}
+
+.nav-page-gle {
+    display: block;
+    background: url(/images/google-nav-logos.webp) no-repeat;
+    background-position: -96px 0;
+    height: 40px;
+    width: 71px;
+}
+
 #nav-page-box {
     width: 100%;
 }
@@ -392,38 +424,6 @@ div[class="result-box"] section {
 
 #nav-page-table a {
     color: #4285f4;
-}
-
-#nav-page-G {
-    display: block;
-    background: url(/images/google-nav-logos.webp) no-repeat;
-    background-position: -24px 0;
-    height: 40px;
-    width: 28px;
-}
-
-#nav-page-o-red {
-    display: block;
-    background: url(/images/google-nav-logos.webp) no-repeat;
-    background-position: -53px 0;
-    height: 40px;
-    width: 20px;
-}
-
-#nav-page-o {
-    display: block;
-    background: url(/images/google-nav-logos.webp) no-repeat;
-    background-position: -74px 0;
-    height: 40px;
-    width: 20px;
-}
-
-#nav-page-gle {
-    display: block;
-    background: url(/images/google-nav-logos.webp) no-repeat;
-    background-position: -96px 0;
-    height: 40px;
-    width: 71px;
 }
 /* Rules for the page navigation container */
 
