@@ -375,6 +375,25 @@ div[class="result-box"] section {
 
 
 /* Rules for the page navigation container near bottom of page */
+.nav-page-box {
+    width: 100%;
+}
+
+.nav-page-table {
+    margin: 0 auto 30px;
+    font-size: 14px;
+    border-collapse: collapse;
+}
+
+.nav-page-table td {
+    padding: 0px;
+    text-align: center;
+}
+
+.nav-page-table a {
+    color: #4285f4;
+}
+
 .nav-page-G {
     display: block;
     background: url(/images/google-nav-logos.png) no-repeat;
@@ -405,25 +424,6 @@ div[class="result-box"] section {
     background-position: -96px 0;
     height: 40px;
     width: 71px;
-}
-
-#nav-page-box {
-    width: 100%;
-}
-
-#nav-page-table {
-    margin: 0 auto 30px;
-    font-size: 14px;
-    border-collapse: collapse;
-}
-
-#nav-page-table td {
-    padding: 0px;
-    text-align: center;
-}
-
-#nav-page-table a {
-    color: #4285f4;
 }
 /* Rules for the page navigation container */
 
